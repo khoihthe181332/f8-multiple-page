@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scholar | Scholar Courses</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/page/reset.css" />
+    <link rel="stylesheet" href="./css/page/courses.css" />
+    <link rel="stylesheet" href="./css/responsives/responsive.css">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- START TOP PAGE -->
+        <div class="top-page" id="top-page">
+            <div class="container">
+                <div class="inner">
+                    <!-- START HEADER -->
+                    <%- include ("./partials/header") %>
+                        <!-- END HEADER -->
+                        <div class="hero">
+                            <div class="hero-content">
+                                <h3 class="hero-title">courses</h3>
+                                <ul>
+                                    <li><a href="./">Home</a></li>
+                                    <li class="space">/</li>
+                                    <li>courses</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- END TOP PAGE -->
+
+        <!-- START FEATURE COURSES-->
+        <div class="feature-courses">
+            <div class="container">
+                <div class="inner">
+                    <!-- Start Sidebar -->
+                    <div class="side-bar">
+                        <div class="input-search">
+                            <input type="text" name="search" placeholder="Search Courses...">
+                            <button class="search-btn" aria-label="Search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <div class="side-bar-list">
+                            <h6>Topics</h6>
+                            <div>
+                                <ul>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Web Development</a></li>
+                                    <li><a href="#">Data Science</a></li>
+                                    <li><a href="#">Mathematics & Stats</a></li>
+                                    <li><a href="#">Robotics</a></li>
+                                    <li><a href="#">Digital Marketing</a></li>
+                                    <li><a href="#">Android Basics</a></li>
+                                    <li><a href="#">Machine Learning</a></li>
+                                    <li><a href="#">Artificial Intelligence</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="side-bar-list">
+                            <h6>Software</h6>
+                            <div>
+                                <ul>
+                                    <li><a href="#">Photoshop</a></li>
+                                    <li><a href="#">Illustrator</a></li>
+                                    <li><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                    <li><a href="#">Java Script</a></li>
+                                    <li><a href="#">DJango</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">Microsoft </a></li>
+                                    <li><a href="#">Ubuntu</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="side-bar-list">
+                            <h6>Level</h6>
+                            <div>
+                                <ul>
+                                    <li><a href="#">Beginner</a></li>
+                                    <li><a href="#">Intermediate</a></li>
+                                    <li><a href="#">Advanced</a></li>
+                                    <li><a href="#">Expert</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Sidebar -->
+
+                    <!-- Start Courses -->
+                    <div class="main-courses">
+                        <!-- Courses menu -->
+                        <div class="courses-menu">
+                            <ul>
+                                <li><a href="#">New</a></li>
+                                <li><a href="#">Trending</a></li>
+                                <li><a href="#">Popular</a></li>
+                                <li><a href="#">Best-Selling</a></li>
+                                <li><a href="#">Most Rated</a></li>
+                            </ul>
+                        </div>
+                        <!-- Courses-list -->
+                        <div class="courses-list">
+                            <!-- box -->
+                            <div class="courses-list-box">
+                                <div class="img-box">
+                                    <img src="https://themazine.com/html/scholars-lms/images/course/7.jpg"
+                                        alt="Courses image">
+                                </div>
+                                <div class="description-courses">
+                                    <h6><a href="#">Introduction to PHP language with Ajax & Redux</a></h6>
+                                    <p>In this course, you will learn the of PHP Framework and Ajax. This course will
+                                        build
+                                        your foundation.</p>
+                                    <div class="author-courses-list">
+                                        <img src="https://themazine.com/html/scholars-lms/images/course/t1.jpg"
+                                            alt="Courses Author"><span>Chris</span>
+                                        <i class="fa-solid fa-user"><span>575</span></i>
+                                        <a href="#">Free</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- box (3n-1) -->
+                            <div class="courses-list-box">
+                                <div class="img-box">
+                                    <img src="https://themazine.com/html/scholars-lms/images/course/8.jpg"
+                                        alt="Courses image">
+                                </div>
+                                <div class="description-courses">
+                                    <h6><a href="#">Introduction to DJango Ling with Remax options</a></h6>
+                                    <p>In this course, you will learn the of PHP Framework and Ajax. This course will
+                                        build your foundation.</p>
+                                    <div class="author-courses-list">
+                                        <img src="https://themazine.com/html/scholars-lms/images/course/t2.jpg"
+                                            alt="Courses Author"><span>Kate</span>
+                                        <i class="fa-solid fa-user"><span>620</span></i>
+                                        <a href="#">$29</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- box (3n) -->
+                            <div class="courses-list-box">
+                                <div class="img-box">
+                                    <img src="https://themazine.com/html/scholars-lms/images/course/9.jpg"
+                                        alt="Courses image">
+                                </div>
+                                <div class="description-courses">
+                                    <h6><a href="#">Introduction to DJango Ling with Remax options</a></h6>
+                                    <p>In this course, you will learn the of PHP Framework and Ajax. This course will
+                                        build your foundation.</p>
+                                    <div class="author-courses-list">
+                                        <img src="https://themazine.com/html/scholars-lms/images/course/t3.jpg"
+                                            alt="Courses Author"><span>Sarah</span>
+                                        <i class="fa-solid fa-user"><span>1575</span></i>
+                                        <a href="#">$39</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- box -->
+                            <div class="courses-list-box">
+                                <div class="img-box">
+                                    <img src="https://themazine.com/html/scholars-lms/images/course/7.jpg"
+                                        alt="Courses image">
+                                </div>
+                                <div class="description-courses">
+                                    <h6><a href="#">Introduction to PHP language with Ajax & Redux</a></h6>
+                                    <p>In this course, you will learn the of PHP Framework and Ajax. This course will
+                                        build
+                                        your foundation.</p>
+                                    <div class="author-courses-list">
+                                        <img src="https://themazine.com/html/scholars-lms/images/course/t1.jpg"
+                                            alt="Courses Author"><span>Chris</span>
+                                        <i class="fa-solid fa-user"><span>575</span></i>
+                                        <a href="#">Free</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- box (3n-1) -->
+                            <div class="courses-list-box">
+                                <div class="img-box">
+                                    <img src="https://themazine.com/html/scholars-lms/images/course/8.jpg"
+                                        alt="Courses image">
+                                </div>
+                                <div class="description-courses">
+                                    <h6><a href="#">Introduction to DJango Ling with Remax options</a></h6>
+                                    <p>In this course, you will learn the of PHP Framework and Ajax. This course will
+                                        build your foundation.</p>
+                                    <div class="author-courses-list">
+                                        <img src="https://themazine.com/html/scholars-lms/images/course/t2.jpg"
+                                            alt="Courses Author"><span>Kate</span>
+                                        <i class="fa-solid fa-user"><span>620</span></i>
+                                        <a href="#">$29</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- box (3n) -->
+                            <div class="courses-list-box">
+                                <div class="img-box">
+                                    <img src="https://themazine.com/html/scholars-lms/images/course/9.jpg"
+                                        alt="Courses image">
+                                </div>
+                                <div class="description-courses">
+                                    <h6><a href="#">Introduction to DJango Ling with Remax options</a></h6>
+                                    <p>In this course, you will learn the of PHP Framework and Ajax. This course will
+                                        build your foundation.</p>
+                                    <div class="author-courses-list">
+                                        <img src="https://themazine.com/html/scholars-lms/images/course/t3.jpg"
+                                            alt="Courses Author"><span>Sarah</span>
+                                        <i class="fa-solid fa-user"><span>1575</span></i>
+                                        <a href="#">$39</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- box -->
+                            <div class="courses-list-box">
+                                <div class="img-box">
+                                    <img src="https://themazine.com/html/scholars-lms/images/course/7.jpg"
+                                        alt="Courses image">
+                                </div>
+                                <div class="description-courses">
+                                    <h6><a href="#">Introduction to PHP language with Ajax & Redux</a></h6>
+                                    <p>In this course, you will learn the of PHP Framework and Ajax. This course will
+                                        build
+                                        your foundation.</p>
+                                    <div class="author-courses-list">
+                                        <img src="https://themazine.com/html/scholars-lms/images/course/t1.jpg"
+                                            alt="Courses Author"><span>Chris</span>
+                                        <i class="fa-solid fa-user"><span>575</span></i>
+                                        <a href="#">Free</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- box (3n-1) -->
+                            <div class="courses-list-box">
+                                <div class="img-box">
+                                    <img src="https://themazine.com/html/scholars-lms/images/course/8.jpg"
+                                        alt="Courses image">
+                                </div>
+                                <div class="description-courses">
+                                    <h6><a href="#">Introduction to DJango Ling with Remax options</a></h6>
+                                    <p>In this course, you will learn the of PHP Framework and Ajax. This course will
+                                        build your foundation.</p>
+                                    <div class="author-courses-list">
+                                        <img src="https://themazine.com/html/scholars-lms/images/course/t2.jpg"
+                                            alt="Courses Author"><span>Kate</span>
+                                        <i class="fa-solid fa-user"><span>620</span></i>
+                                        <a href="#">$29</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- box (3n) -->
+                            <div class="courses-list-box">
+                                <div class="img-box">
+                                    <img src="https://themazine.com/html/scholars-lms/images/course/9.jpg"
+                                        alt="Courses image">
+                                </div>
+                                <div class="description-courses">
+                                    <h6><a href="#">Introduction to DJango Ling with Remax options</a></h6>
+                                    <p>In this course, you will learn the of PHP Framework and Ajax. This course will
+                                        build your foundation.</p>
+                                    <div class="author-courses-list">
+                                        <img src="https://themazine.com/html/scholars-lms/images/course/t3.jpg"
+                                            alt="Courses Author"><span>Sarah</span>
+                                        <i class="fa-solid fa-user"><span>1575</span></i>
+                                        <a href="#">$39</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pagination -->
+                        <div class="pagination">
+                            <ul>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">Next</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Courses -->
+                </div>
+            </div>
+        </div>
+        <!-- END FEATURE COURSES-->
+
+        <!-- Start footer -->
+        <div class="end-page">
+            <div class="container">
+                <div class="inner">
+                    <%- include ("./partials/footer") %>
+                </div>
+            </div>
+        </div>
+        <!-- End footer -->
+    </div>
+
+    <!-- Scroll button -->
+    <%- include ("./partials/scroll-btn") %>
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholar | Shop Page</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/page/reset.css" />
+    <link rel="stylesheet" href="./css/page/shop.css" />
+    <link rel="stylesheet" href="./css/responsives/responsive.css">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Start top page -->
+        <div class="top-page" id="top-page">
+            <div class="container">
+                <div class="inner">
+                    <!-- Start header -->
+                    <%- include ("./partials/header") %>
+                        <!-- End header -->
+                        <!-- Start hero -->
+                        <div class="hero">
+                            <div class="hero__content">
+                                <h3 class="hero__content--title">courses</h3>
+                                <ul>
+                                    <li><a href="#!">Home</a></li>
+                                    <li>/</li>
+                                    <li><a href="#!">Page</a></li>
+                                    <li>/</li>
+                                    <li>Shop</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End hero -->
+                </div>
+            </div>
+        </div>
+        <!-- End top page -->
+
+        <!-- Start shop page -->
+        <div class="shop-page">
+            <div class="container">
+                <div class="inner">
+                    <input type="checkbox" name id="toggle-sidebar" hidden>
+                    <!-- side bar -->
+                    <label for="toggle-sidebar" class="overlay">
+                        <div class="overlay"></div>
+                    </label>
+                    <div class="shop-page__side-bar">
+                        <label for="toggle-sidebar">
+                            <div class="exist-toggle-sidebar">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </label>
+                        <div class="side-bar__search">
+                            <form action="#" class="side-bar__search--form">
+                                <input type="text" name="search" placeholder="Search Products">
+                                <button type="submit" class="side-bar__search--btn" title="Search">
+                                    Search
+                                </button>
+                            </form>
+                        </div>
+                        <div class="side-bar__category">
+                            <h4 class="side-bar__category--title">Shop
+                                Categories: </h4>
+                            <ul class="side-bar__category--list">
+                                <li><a href="#">SMM Shop</a></li>
+                                <li><a href="#">Network Security </a></li>
+                                <li><a href="#">Programming </a></li>
+                                <li><a href="#">Search Engine Opt</a></li>
+                                <li><a href="#">Social Media</a></li>
+                                <li><a href="#">Technology</a></li>
+                                <li><a href="#">User Experience </a></li>
+                                <li><a href="#">Website Analytics </a></li>
+                            </ul>
+                        </div>
+                        <div class="side-bar__product">
+                            <h4 class="side-bar__product--title">Popular
+                                Product: </h4>
+                            <ul class="side-bar__product--list">
+                                <li>
+                                    <img src="https://themazine.com/html/scholars-lms/images/shop/1.jpg"
+                                        alt="Product 1">
+                                    <div class="product-description">
+                                        <a href="#">Analysis & data</a>
+                                        <strong>$ 235</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="https://themazine.com/html/scholars-lms/images/shop/2.jpg"
+                                        alt="Product 2">
+                                    <div class="product-description">
+                                        <a href="#">Software Dev...</a>
+                                        <strong>$ 35</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="https://themazine.com/html/scholars-lms/images/shop/3.jpg"
+                                        alt="Product 3">
+                                    <div class="product-description">
+                                        <a href="#">Marketing Plan</a>
+                                        <strong>$ 75</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="https://themazine.com/html/scholars-lms/images/shop/4.jpg"
+                                        alt="Product 4">
+                                    <div class="product-description">
+                                        <a href="#">Google Expands </a>
+                                        <strong>$ 234</strong>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- content -->
+                    <div class="shop-page__content">
+                        <label for="toggle-sidebar" class="btn-side-bar">
+                            <div>
+                                <i class="fa-solid fa-list"></i>
+                            </div>
+                        </label>
+                        <div class="shop-page__content--header">
+                            <input type="checkbox" name id="option" hidden>
+                            <label for="option" class="select-filter">
+                                <div>
+                                    <div>Select Filter</div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </label>
+                            <div class="filter-option">
+                                <ul>
+                                    <li>
+                                        <label for="option">
+                                            Select Filter
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="option">
+                                            By Price
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="option">
+                                            By Category
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="option">
+                                            By Date
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-title">
+                                Showing 1-9 of 25 Result
+                            </div>
+                        </div>
+                        <div class="shop-page__content--product">
+                            <div class="product-box">
+                                <div class="product__img">
+                                    <img src="https://themazine.com/html/scholars-lms/images/shop/5.jpg" alt>
+                                </div>
+                                <div class="product__info">
+                                    <div class="product__info--name">
+                                        Ten steps to making
+                                    </div>
+                                    <div class="product__info--price">
+                                        $ 89
+                                    </div>
+                                    <div class="product__info--btn">
+                                        <button>add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product__img">
+                                    <img src="https://themazine.com/html/scholars-lms/images/shop/6.jpg" alt>
+                                </div>
+                                <div class="product__info">
+                                    <div class="product__info--name">
+                                        Long-Tail SEO Strategy
+                                    </div>
+                                    <div class="product__info--price">
+                                        $ 19
+                                    </div>
+                                    <div class="product__info--btn">
+                                        <button>add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product__img">
+                                    <img src="https://themazine.com/html/scholars-lms/images/shop/7.jpg" alt>
+                                </div>
+                                <div class="product__info">
+                                    <div class="product__info--name">
+                                        Create optimized content
+                                    </div>
+                                    <div class="product__info--price">
+                                        $ 79
+                                    </div>
+                                    <div class="product__info--btn">
+                                        <button>add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product__img">
+                                    <img src="https://themazine.com/html/scholars-lms/images/shop/8.jpg" alt>
+                                </div>
+                                <div class="product__info">
+                                    <div class="product__info--name">
+                                        Boost Your Organic
+                                    </div>
+                                    <div class="product__info--price">
+                                        $ 9
+                                    </div>
+                                    <div class="product__info--btn">
+                                        <button>add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product__img">
+                                    <img src="https://themazine.com/html/scholars-lms/images/shop/9.jpg" alt>
+                                </div>
+                                <div class="product__info">
+                                    <div class="product__info--name">
+                                        Search Rankings
+                                    </div>
+                                    <div class="product__info--price">
+                                        $ 47
+                                    </div>
+                                    <div class="product__info--btn">
+                                        <button>add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product__img">
+                                    <img src="https://themazine.com/html/scholars-lms/images/shop/10.jpg" alt>
+                                </div>
+                                <div class="product__info">
+                                    <div class="product__info--name">
+                                        School PPC
+                                    </div>
+                                    <div class="product__info--price">
+                                        $ 36
+                                    </div>
+                                    <div class="product__info--btn">
+                                        <button>add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product__img">
+                                    <img src="https://themazine.com/html/scholars-lms/images/shop/11.jpg" alt>
+                                </div>
+                                <div class="product__info">
+                                    <div class="product__info--name">
+                                        Guide to SEO
+                                    </div>
+                                    <div class="product__info--price">
+                                        $ 19
+                                    </div>
+                                    <div class="product__info--btn">
+                                        <button>add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product__img">
+                                    <img src="https://themazine.com/html/scholars-lms/images/shop/12.jpg" alt>
+                                </div>
+                                <div class="product__info">
+                                    <div class="product__info--name">
+                                        Influencer Marketing
+                                    </div>
+                                    <div class="product__info--price">
+                                        $ 90
+                                    </div>
+                                    <div class="product__info--btn">
+                                        <button>add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product__img">
+                                    <img src="https://themazine.com/html/scholars-lms/images/shop/13.jpg" alt>
+                                </div>
+                                <div class="product__info">
+                                    <div class="product__info--name">
+                                        PPC Agency
+                                    </div>
+                                    <div class="product__info--price">
+                                        $ 79
+                                    </div>
+                                    <div class="product__info--btn">
+                                        <button>add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pagination -->
+                        <div class="shop-page__content--pagination">
+                            <div class="page">1</div>
+                            <div class="page">2</div>
+                            <div class="page">3</div>
+                            <button type="submit" title="Next page"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End shop page -->
+
+        <!-- Start end page -->
+        <div class="end-page">
+            <div class="container">
+                <div class="inner">
+                    <%- include ("./partials/footer") %>
+                </div>
+            </div>
+        </div>
+        <!-- End end page -->
+    </div>
+
+    <!-- Scroll button -->
+    <%- include ("./partials/scroll-btn") %>
+</body>
+
+</html>
